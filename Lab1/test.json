@@ -1,0 +1,82 @@
+[
+  {
+    "upperLeft": {
+      "x": 83.0,
+      "y": 143.0
+    },
+    "width": 136.0,
+    "height": 81.0,
+    "SHAPE_TYPE": "cs355.model.drawing.Rectangle"
+  },
+  {
+    "upperLeft": {
+      "x": 137.0,
+      "y": 193.0
+    },
+    "width": 107.0,
+    "height": 76.0,
+    "SHAPE_TYPE": "cs355.model.drawing.Rectangle"
+  },
+  {
+    "upperLeft": {
+      "x": 63.0,
+      "y": 116.0
+    },
+    "width": 194.0,
+    "height": 296.0,
+    "color": {
+      "value": -10079233,
+      "falpha": 0.0
+    },
+    "SHAPE_TYPE": "cs355.model.drawing.Rectangle"
+  },
+  {
+    "upperLeft": {
+      "x": 138.0,
+      "y": 184.0
+    },
+    "width": 198.0,
+    "height": 63.0,
+    "color": {
+      "value": -10079233,
+      "falpha": 0.0
+    },
+    "SHAPE_TYPE": "cs355.model.drawing.Rectangle"
+  },
+  {
+    "upperLeft": {
+      "x": 118.0,
+      "y": 91.0
+    },
+    "size": 133.0,
+    "color": {
+      "value": -10079233,
+      "falpha": 0.0
+    },
+    "SHAPE_TYPE": "cs355.model.drawing.Square"
+  },
+  {
+    "upperLeft": {
+      "x": 68.0,
+      "y": 82.0
+    },
+    "size": 280.0,
+    "color": {
+      "value": -10079233,
+      "falpha": 0.0
+    },
+    "SHAPE_TYPE": "cs355.model.drawing.Square"
+  },
+  {
+    "upperLeft": {
+      "x": 155.0,
+      "y": 302.0
+    },
+    "size": 176.0,
+    "color": {
+      "value": -10079233,
+      "falpha": 0.0
+    },
+    "SHAPE_TYPE": "cs355.model.drawing.Square"
+  }
+]
