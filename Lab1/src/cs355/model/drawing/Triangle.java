@@ -117,7 +117,7 @@ public class Triangle extends Shape {
 		b3 = sign(objectCoordinate, c, a) < 0;
 
 		if (b1 && b2 && b3){
-			System.out.println("Triangel selected");
+			System.out.println("Triangle selected");
 			return true;
 		}
 		return false;
@@ -127,8 +127,24 @@ public class Triangle extends Shape {
 
 	@Override
 	public boolean pointInHandle(Point2D.Double pt, double tolerance) {
-		return false;
-	}
+		Point2D.Double objectCoordinate = new Point2D.Double();
+		AffineTransform worldToObject = new AffineTransform();
+		worldToObject.rotate(-rotation);
+		worldToObject.translate(-center.getX(), -center.getY());
+		worldToObject.transform(pt, objectCoordinate);
+
+		double max_Y = Math.max(a.getY(), b.getY());
+		max_Y = Math.max(max_Y, c.getY());
+
+
+		if (objectCoordinate.getX() >= -5 && objectCoordinate.getX() <= 5 ){
+			if (objectCoordinate.getY() >= -(max_Y + 23) && objectCoordinate.getY() <= -(max_Y +12)){
+				System.out.println("handle selected");
+				//System.out.println("ordi: " + objectCoordinate);
+				return true;
+			}
+		}
+		return false;	}
 
 
 	public double sign(Point2D p1, Point2D p2, Point2D p3){

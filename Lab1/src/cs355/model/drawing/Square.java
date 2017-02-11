@@ -80,7 +80,7 @@ public class Square extends Shape {
 		if (objectCoordinate.getX() >= -5 && objectCoordinate.getX() <= 5 ){
 			if (objectCoordinate.getY() >= -(size/2 + 23) && objectCoordinate.getY() <= -(size/2 +12)){
 				System.out.println("handle selected");
-				System.out.println("ordi: " + objectCoordinate);
+				//System.out.println("ordi: " + objectCoordinate);
 				return true;
 			}
 		}

@@ -46,6 +46,9 @@ public class DrawableCircle extends DrawableShape {
 
         g2d.setColor(Color.CYAN);
         g2d.drawOval((int)-radius, (int)-radius, (int)radius*2, (int)radius*2);
+
+        g2d.drawOval(-3, (int)-(radius + 23), (int)5*2, (int)5*2);
+
     }
 
     public void create_up_left(){

@@ -79,5 +79,11 @@ public class DrawableTriangle extends DrawableShape {
         g2d.setColor(Color.CYAN);
 
         g2d.drawPolygon(x, y, points);
+        double max_Y = Math.max(point_a.getY(), point_b.getY());
+        max_Y = Math.max(max_Y, point_c.getY());
+
+
+        g2d.drawOval(-3, (int)-(max_Y + 23), (int)5*2, (int)5*2);
+
     }
 }

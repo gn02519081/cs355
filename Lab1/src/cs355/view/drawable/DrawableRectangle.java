@@ -48,5 +48,8 @@ public class DrawableRectangle extends DrawableShape {
 
         g2d.setColor(Color.CYAN);
         g2d.drawRect((int)-width/2, (int)-height/2, (int)width, (int)height);
+
+        g2d.drawOval(-3, (int)-(height/2 + 23), (int)5*2, (int)5*2);
+
     }
 }
