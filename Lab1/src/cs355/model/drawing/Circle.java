@@ -77,6 +77,19 @@ public class Circle extends Shape {
 
 	@Override
 	public boolean pointInHandle(Point2D.Double pt, double tolerance) {
+		Point2D.Double objectCoordinate = new Point2D.Double();
+		AffineTransform worldToObject = new AffineTransform();
+		worldToObject.rotate(-rotation);
+		worldToObject.translate(-center.getX(), -center.getY());
+		worldToObject.transform(pt, objectCoordinate);
+
+		if (objectCoordinate.getX() >= -5 && objectCoordinate.getX() <= 5 ){
+			if (objectCoordinate.getY() >= -(radius + 23) && objectCoordinate.getY() <= -(radius/2 +12)){
+				System.out.println("handle selected");
+				//System.out.println("ordi: " + objectCoordinate);
+				return true;
+			}
+		}
 		return false;
 	}
 

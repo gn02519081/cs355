@@ -422,8 +422,8 @@ public class Controller implements CS355Controller {
                     if (dragHandleSelected && shapeSelected.pointInHandle(point, 5)){
                         rotateShape(e);
                     }
-                    else if (shapeSelected.pointInShape(point, 0)) {
-                        if (shapeSelected instanceof  Line){
+                    else if (shapeSelected != null && shapeSelected.pointInShape(point, 0)) {
+                        if (shapeSelected instanceof Line){
                             if (lastDrag == null){
                                 lastDrag = point;
                             }
